@@ -1,6 +1,6 @@
 # Praktisi Mengajar dengan Project Pembuatan Aplikasi Android
 
-Selamat datang di repositori Program "Praktisi Mengajar dengan Project Pembuatan Aplikasi Android". Program ini dirancang untuk membantu praktisi pemrograman Android mempelajari konsep dan praktik terbaik dalam pengembangan aplikasi Android melalui proyek pembuatan aplikasi yang praktis dan aplikatif.
+Selamat datang di repositori Program "Praktisi Mengajar dengan Project Pembuatan Aplikasi Android". Program ini dirancang untuk membantu praktisi pemrograman Android mempelajari konsep dan praktik terbaik dalam pengembangan aplikasi Android melalui proyek pembuatan aplikasi yang praktis dan aplikatif menggunakan arsitektur MVVM (Model View View-Model). 
 
 ## Deskripsi Program
 
