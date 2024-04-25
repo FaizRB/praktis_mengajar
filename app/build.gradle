@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+def keyProperties = new Properties()
+def keyPropertiesFile = rootProject.file('local.properties')
+if (keyPropertiesFile.exists()) {
+    keyProperties.load(new FileInputStream(keyPropertiesFile))
+}
+android {
+    namespace 'com.baseprojectkotlin'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.baseprojectkotlin"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "backend"
+    productFlavors {
+        dev {
+            dimension "backend"
+            buildConfigField 'String', 'BASE_URL', keyProperties['server_base_url_dev']
+            applicationIdSuffix ".dev"
+            manifestPlaceholders = [appName: "BaseProject (Dev)"]
+        }
+        stage {
+            dimension "backend"
+            buildConfigField 'String', 'BASE_URL', keyProperties['server_base_url_dev']
+            applicationIdSuffix ".stage"
+            manifestPlaceholders = [appName: "BaseProject (Stage)"]
+        }
+        prod {
+            dimension "backend"
+            buildConfigField 'String', 'BASE_URL', keyProperties['server_base_url_dev']
+            applicationIdSuffix ".prod"
+            manifestPlaceholders = [appName: "BaseProject (Prod)"]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation "io.insert-koin:koin-android:3.2.2"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "com.github.haroldadmin:NetworkResponseAdapter:3.0.1"
+    implementation "com.orhanobut:hawk:2.0.1"
+}
