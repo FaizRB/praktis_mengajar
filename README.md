@@ -11,7 +11,6 @@ Program ini terdiri dari serangkaian materi pembelajaran, proyek-proyek aplikasi
 Repositori ini terdiri dari beberapa direktori yang masing-masing berisi proyek aplikasi Android, materi pembelajaran, dan sumber daya tambahan. Berikut adalah struktur direktori utama:
 
 - `Projects/`: Direktori ini berisi proyek-proyek aplikasi Android yang akan dipelajari oleh praktisi dalam program ini.
-- `Lessons/`: Direktori ini berisi materi pembelajaran yang meliputi teks, slide presentasi, dan contoh kode terkait konsep-konsep penting dalam pengembangan aplikasi Android.
 - `Resources/`: Direktori ini berisi sumber daya tambahan seperti buku, artikel, dan video tutorial yang dapat digunakan sebagai referensi tambahan dalam pembelajaran.
 
 ## Cara Menggunakan Repositori
