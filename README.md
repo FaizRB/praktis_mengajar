@@ -17,11 +17,9 @@ Repositori ini terdiri dari beberapa direktori yang masing-masing berisi proyek 
 
 1. **Eksplorasi Proyek Aplikasi**: Mulailah dengan mengeksplorasi proyek-proyek aplikasi yang ada di direktori `Projects/`. Setiap proyek memiliki panduan dan instruksi yang terpisah di dalam direktori proyek tersebut.
 
-2. **Pelajari Materi Pembelajaran**: Jelajahi materi pembelajaran di direktori `Lessons/` untuk memahami konsep-konsep dasar dan lanjutan dalam pengembangan aplikasi Android.
+2. **Manfaatkan Sumber Daya Tambahan**: Gunakan sumber daya tambahan yang tersedia di direktori `Resources/` untuk mendalami topik tertentu atau mencari solusi untuk masalah yang muncul.
 
-3. **Manfaatkan Sumber Daya Tambahan**: Gunakan sumber daya tambahan yang tersedia di direktori `Resources/` untuk mendalami topik tertentu atau mencari solusi untuk masalah yang muncul.
-
-4. **Berpartisipasi dan Berkontribusi**: Jangan ragu untuk berpartisipasi dalam diskusi, memberikan umpan balik, atau bahkan berkontribusi dengan menambahkan materi atau proyek aplikasi baru yang bermanfaat untuk komunitas.
+3. **Berpartisipasi dan Berkontribusi**: Jangan ragu untuk berpartisipasi dalam diskusi, memberikan umpan balik, atau bahkan berkontribusi dengan menambahkan materi atau proyek aplikasi baru yang bermanfaat untuk komunitas.
 
 ## Lisensi
 
